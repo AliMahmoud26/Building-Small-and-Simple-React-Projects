@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaAngleDoubleRight } from 'react-icons/fa';
 import jobsData from './data';
 
-const url = 'https://cors-anywhere.herokuapp.com/http://course-api.com/react-tabs-project';
+// const url = 'https://cors-anywhere.herokuapp.com/http://course-api.com/react-tabs-project';
 
 function App() {
   const [loading, setLoading] = useState(true);
