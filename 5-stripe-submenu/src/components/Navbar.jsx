@@ -31,12 +31,14 @@ const Navbar = () => {
         </div>
         <ul className="nav-links">
           <li>
-            <button className="link-btn">Products</button>
+            <button className="link-btn" onMouseOver={displaySubmenu}>Products</button>
           </li>
           <li>
-            <button className="link-btn">Developers</button>
+            <button className="link-btn" onMouseOver={displaySubmenu}>Developers</button>
           </li>
-          <li className="link-btn">Company</li>
+          <li className="link-btn">
+            <button className="link-btn" onMouseOver={displaySubmenu}>Company</button>
+          </li>
         </ul>
         <button className="btn signin-btn">Sign in</button>
       </div>
