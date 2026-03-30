@@ -2,8 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className='nav' onMouseOver={handleSubmenu}>
-    </nav>
+    <nav className='nav'></nav>
   );
 };
 
