@@ -1,10 +1,9 @@
-import React from 'react';
-import {useGlobalContext} from '../context/Context';
+import {useGlobalContext} from '../Context';
 import { FaBars } from 'react-icons/fa';
 import logo from '../assets/logo.svg';
 
 const Navbar = () => {
-  const [openSidebar, openSubmenu, closeSubmenu] = useGlobalContext();
+  const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
   // we need to get the location of the button that we hover over, so we can position the submenu - This is a function to get the location of the button that we hover over.
   // we can get the location of the button using getBoundingClientRect() method, which returns the size of an element and its position relative to the viewport. We can use this method to get the center and bottom position of the button, which we can then pass to the open
   const displaySubmenu = (e) => {
@@ -23,7 +22,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='nav'>
+    <nav className='nav' onMouseOver={handleSubmenu}>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} className='nav-logo' alt="logo" />
