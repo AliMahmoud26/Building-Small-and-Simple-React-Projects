@@ -1,6 +1,6 @@
 import React from 'react';
 import phoneImg from '../assets/phone.svg';
-import { useGlobalContext } from '../context/Context';
+import { useGlobalContext } from '../Context';
 
 const Hero = () => {
   const {closeSubmenu} = useGlobalContext();
