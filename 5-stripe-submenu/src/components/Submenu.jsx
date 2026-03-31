@@ -1,9 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react'
-import { useGlobalContext } from './context'
+import React from 'react'
 
 const Submenu = () => {
   return (
-    <aside></aside>
+    <div></div>
   )
 }
 
